@@ -4,10 +4,10 @@
 
 class Add{
     int value ;
-    public  int add(Add a,Add b){
-        return a.value+b.value;
-        }
+    public static int method(Add a1,Add a2){
+        return a1.value+a2.value;
     }
+}
 
 public class Main3 {
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class Main3 {
         Add a2 = new Add();
         a1.value =9;
         a2.value =8;
-        int res = a1.add(a1,a2);
+        int res = Add.method(a1,a2);
         System.out.println(res);
 
     }
